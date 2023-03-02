@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3CF69F"
+    android:background="	#ffe4b5"
     tools:context=".FavouritesFragment">
 
     <TextView

@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="#E0E69D" />
+        android:background="#87cefa" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager2"
