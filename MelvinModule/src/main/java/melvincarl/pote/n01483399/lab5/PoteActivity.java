@@ -18,17 +18,17 @@ public class PoteActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
         viewPager2 = findViewById(R.id.viewPager2);
 
     }
-    public void setViewPagerAdapter() {
+    public void setViewPagerAdapter () {
         ViewPager2Adapter viewPager2Adapter = new ViewPager2Adapter(this);
         ArrayList<Fragment> fragmentList = new ArrayList<>();
         fragmentList.add(new HomeFragment());
         fragmentList.add(new SettingsFragment());
         fragmentList.add(new FavouritesFragment());
-
+        viewPager2Adapter.setData(fragmentList);
         viewPager2.setAdapter(viewPager2Adapter);
     }
+
 }
