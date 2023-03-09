@@ -2,16 +2,16 @@
 <resources>
     <string name="app_name">MelvinLayout</string>
     <string name="melvin_carl_pote_n01483399">Melvin Carl Pote, N01483399</string>
-    <string name="submitButton">Submit</string>
-    <string name="empty">Cannot be empty</string>
-    <string name="nodata">NO DATA</string>
-    <string name="invalid">Invalid email</string>
-    <string name="enter_email">Enter email</string>
-    <string name="home">Home</string>
-    <string name="settings">Settings</string>
-    <string name="favourites">Favorites</string>
-    <string name="toggle">Switch</string>
-    <string name="onSwitch">Switch is ON</string>
-    <string name="closeSnackBar">CLOSE</string>
-    <string name="offSwitch">The switch is OFF</string>
+    <string name="submitButton">Soumettre</string>
+    <string name="empty">Ne peux pas être vide</string>
+    <string name="nodata">PAS DE DONNÉES</string>
+    <string name="invalid">Email invalide</string>
+    <string name="enter_email">Entrez le e-mail:</string>
+    <string name="home">Maison</string>
+    <string name="settings">Paramètres</string>
+    <string name="favourites">Favoris</string>
+    <string name="toggle">Changer</string>
+    <string name="onSwitch">Le interrupteur est allumé</string>
+    <string name="closeSnackBar">FERMER</string>
+    <string name="offSwitch">Le interrupteur est éteint</string>
 </resources>
