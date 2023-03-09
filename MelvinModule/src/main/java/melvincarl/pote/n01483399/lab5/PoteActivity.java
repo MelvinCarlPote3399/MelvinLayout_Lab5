@@ -27,9 +27,10 @@ public class PoteActivity extends AppCompatActivity implements TabLayoutMediator
         viewPager2 = findViewById(R.id.viewPager2);
         tabLayout = findViewById(R.id.tabLayout);
         titles = new ArrayList<String>();
-        titles.add("Home");
-        titles.add("Settings");
-        titles.add("Favorites");
+        titles.add(getString(R.string.home));
+        titles.add(getString(R.string.settings));
+        titles.add(getString(R.string.favourites));
+        //tabLayout.getTabAt(0).setIcon(R.drawable.panda_dunk_1);
         setViewPagerAdapter();
         new TabLayoutMediator(tabLayout,viewPager2,this).attach();
     }
