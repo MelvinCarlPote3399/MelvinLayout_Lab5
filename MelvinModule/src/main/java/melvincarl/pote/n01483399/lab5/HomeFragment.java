@@ -99,6 +99,7 @@ public class HomeFragment extends Fragment {
         });
         return view;
     }
+    //checks to see if email address entered is valid or not (EMAIL_ADDRESS)
     private  boolean isValidEmail(CharSequence email){
         return !TextUtils.isEmpty(email) && Patterns.EMAIL_ADDRESS.matcher(email).matches();
     }
