@@ -2,11 +2,19 @@ package melvincarl.pote.n01483399.lab5;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentResultListener;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CompoundButton;
+import android.widget.Switch;
+import android.widget.TextView;
+import com.google.android.material.snackbar.Snackbar;
+
+import org.w3c.dom.Text;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +67,41 @@ public class SettingsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_settings, container, false);
+        View view = inflater.inflate(R.layout.fragment_settings, container, false);
+        TextView passedText = view.findViewById(R.id.textView7);
+        Switch toggleSwitch = view.findViewById(R.id.switch1);
+        getParentFragmentManager().setFragmentResultListener("requestEmail", this, new FragmentResultListener() {
+            @Override
+            public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
+                passedText.setText(result.getString("email"));
+            }
+        });
+
+        toggleSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    Snackbar ourSnackBar = Snackbar.make(view,getResources().getString(R.string.onSwitch),Snackbar.LENGTH_INDEFINITE);
+                    ourSnackBar.setAction(getResources().getString(R.string.closeSnackBar), new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+
+                        }
+                    });
+                    ourSnackBar.show();
+                }
+                else {
+                    Snackbar ourSnackBar = Snackbar.make(view,getResources().getString(R.string.offSwitch),Snackbar.LENGTH_INDEFINITE);
+                    ourSnackBar.setAction(getResources().getString(R.string.closeSnackBar), new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+
+                        }
+                    });
+                    ourSnackBar.show();
+                }
+            }
+        });
+        return view;
     }
 }

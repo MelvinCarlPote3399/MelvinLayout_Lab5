@@ -10,4 +10,8 @@
     <string name="home">Home</string>
     <string name="settings">Settings</string>
     <string name="favourites">Favorites</string>
+    <string name="toggle">Switch</string>
+    <string name="onSwitch">Switch is ON</string>
+    <string name="closeSnackBar">CLOSE</string>
+    <string name="offSwitch">The switch is OFF</string>
 </resources>
