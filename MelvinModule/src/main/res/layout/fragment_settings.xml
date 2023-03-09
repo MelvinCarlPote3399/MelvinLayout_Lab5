@@ -13,15 +13,16 @@
         android:id="@+id/textView7"
         android:layout_width="410dp"
         android:layout_height="848dp"
-        android:layout_marginTop="4dp"
         android:background="#FFB6C1"
+        android:text="@string/nodata"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
     </TextView>
 
-    <androidx.appcompat.widget.SwitchCompat
+    <Switch
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,6 +31,7 @@
         android:layout_marginEnd="162dp"
         android:minHeight="48dp"
         android:text="@string/toggle"
+        android:textColor="#6D4C41"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
