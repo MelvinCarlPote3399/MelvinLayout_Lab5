@@ -1,6 +1,20 @@
 <resources>
     <string name="app_name">MelvinLayout</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="melvin_carl_pote_n01483399">Melvin Carl Pote, N01483399</string>
+    <string name="submitButton">Submit</string>
+
+    <string-array name="email_list">
+        <item>sarah@gmail.com</item>
+        <item>laurie@yahoo.com</item>
+        <item>allison@outlook.com</item>
+        <item>melissa@yahoo.com</item>
+        <item>michelle@gmail.com</item>
+        <item>carla@gmail.com</item>
+        <item>stephanie@outlook.com</item>
+    </string-array>
+    <string name="empty">Cannot be empty</string>
+    <string name="nodata"></string>
+    <string name="invalid">Invalid email</string>
+    <string name="enter_email">Enter email:</string>
 </resources>
