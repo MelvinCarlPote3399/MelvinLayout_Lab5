@@ -4,7 +4,7 @@
     <string name="melvin_carl_pote_n01483399">Melvin Carl Pote, N01483399</string>
     <string name="submitButton">Submit</string>
     <string name="empty">Cannot be empty</string>
-    <string name="nodata"></string>
+    <string name="nodata">NO DATA</string>
     <string name="invalid">Invalid email</string>
     <string name="enter_email">Enter email</string>
 </resources>
